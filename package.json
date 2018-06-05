@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"DEBUG=app node app.js"
+    "start": "DEBUG=app node app.js",
+    "lint":"eslint app.js"
   },
   "author": "Kishore",
   "license": "ISC",
@@ -13,8 +14,13 @@
     "bootstrap": "^4.1.1",
     "chalk": "^2.4.1",
     "debug": "^3.1.0",
+    "eslint": "^4.19.1",
     "express": "^4.16.3",
     "jquery": "^3.3.1",
     "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0"
   }
 }
