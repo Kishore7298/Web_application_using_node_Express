@@ -9,6 +9,7 @@
   "author": "Kishore",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^2.4.1",
     "express": "^4.16.3"
   }
 }
