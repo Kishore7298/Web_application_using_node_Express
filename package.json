@@ -18,7 +18,8 @@
     "express": "^4.16.3",
     "jquery": "^3.3.1",
     "morgan": "^1.9.0",
-    "nodemon": "^1.17.5"
+    "nodemon": "^1.17.5",
+    "pug": "^2.0.3"
   },
   "devDependencies": {
     "eslint-config-airbnb-base": "^12.1.0",
