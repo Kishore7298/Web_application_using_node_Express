@@ -5,15 +5,7 @@ const morgan = require('morgan');
 const path = require('path');
 
 const app = express();
-const bookRouter = express.Router();
-
-bookRouter.route('/').get((req, res) => {
-  res.send('Hello from books!');
-});
-bookRouter.route('/single').get((req, res) => {
-  res.send('Hello from single book');
-});
-
+const bookRouter = require('./src/routes/bookRoutes');
 
 app.use('/books', bookRouter);
 app.use(morgan('tiny'));
