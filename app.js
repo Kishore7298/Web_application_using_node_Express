@@ -4,8 +4,10 @@ const debug = require('debug')('app');
 const morgan = require('morgan');
 const path = require('path');
 
+const nav = [{ title: 'books', link: '/books' },
+  { title: 'Authors', link: '/authors' }];
 const app = express();
-const bookRouter = require('./src/routes/bookRoutes');
+const bookRouter = require('./src/routes/bookRoutes')(nav);
 
 app.use('/books', bookRouter);
 app.use(morgan('tiny'));
